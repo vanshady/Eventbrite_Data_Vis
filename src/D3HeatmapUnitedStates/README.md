@@ -27,11 +27,7 @@ This section provides a brief description of the all the files and their purpose
 Following figure shows the screenshot of distributions of events based on their count in the United States. The state being hovered upon in this screenshot is New York. 
  ![My image](https://github.com/ashwintumma23/EventbriteDataVisualizations/blob/master/Images/D3Maps.png)
  
- Following figure shows the screenshot of distributions of events based on their count in the United States. The state being hovered upon in this screenshot is California. 
- ![My image](https://github.com/ashwintumma23/EventbriteDataVisualizations/blob/master/Images/D3California.png)
- 
 ### Other Enhancements: 
  This section lists some of the enhancements that are possible for in this data visualization. 
  * Aggregation of all the code in the same python script file can be done easily
  * Different colors can be used for rendering the maps. An example of which is shown in the screenshot below.
-![My image](https://github.com/ashwintumma23/EventbriteDataVisualizations/blob/master/Images/RedD3Map.png)

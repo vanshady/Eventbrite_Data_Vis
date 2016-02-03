@@ -23,6 +23,3 @@ This section provides a brief description of the all the files and their purpose
 ### Screenshots: 
 The following screenshot displays a sample value for a day in month of June 2015
  ![My image](https://github.com/ashwintumma23/EventbriteDataVisualizations/blob/master/Images/CalendarJune.png)
-
-The following screenshot displays a sample value for a day in month of December 2015
- ![My image](https://github.com/ashwintumma23/EventbriteDataVisualizations/blob/master/Images/CalendarDecember.png)

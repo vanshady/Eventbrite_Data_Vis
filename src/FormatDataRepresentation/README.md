@@ -21,10 +21,7 @@ This section provides a brief description of the all the files and their purpose
 Following figure shows the screenshot of distributions of events based on their format. 
   ![My image](https://github.com/ashwintumma23/EventbriteDataVisualizations/blob/master/Images/BubbleChart.png)
  
-Following figure shows the screenshot of distributions of events based on their format. 
-  ![My image](https://github.com/ashwintumma23/EventbriteDataVisualizations/blob/master/Images/BubbleChartOne.png)
 
- 
 ### Other Enhancements: 
  This section lists some of the enhancements that are possible for in this data visualization. 
  * Coloring the circles with different color codes can be done to represent yet another dimension of the data.
