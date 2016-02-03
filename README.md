@@ -10,7 +10,7 @@ Python, [D3.js](http://d3js.org/), [Google Maps API v3](https://developers.googl
 #### Author
 [Minwei Xu](http://mwxu.me)   
 Computer Science Undergraduate Student,  
-UC Davis,  
+UC Davis
 
 This repository is modified from [Ashwin Tumma's](https://sites.google.com/site/ashwintumma23) version
 
@@ -37,10 +37,10 @@ In this visualization, the geographical location of Eventbrite events is plotted
 * References: Google maps API code samples from Google Developers [website](https://developers.google.com/maps/).
 
 Following figure shows the screenshot of the data visualization looking from the global perspective
- ![My image](./images/GMapFull.png)
+ ![My image](https://github.com/vanshady/Eventbrite_Data_vis/blob/master/images/GMapFull.png)
   
 While, the next figure shows the screenshot of the event location plots for United States:
-![My image](./images/UnitedStates.png)
+![My image](https://github.com/vanshady/Eventbrite_Data_vis/blob/master/images/UnitedStates.png)
 
 Heatmap of count of events in the United States (using D3.js)
 ================================================================================
@@ -56,7 +56,7 @@ In this data visualization, we create a heatmap of the states in the United Stat
 Tipsy [Website](http://bl.ocks.org/ilyabo/1373263) - For displaying tips on mouse hover
 
 Following figure shows the screenshot of distributions of events based on their count in the United States
- ![My image](./images/D3Maps.png)
+ ![My image](https://github.com/vanshady/Eventbrite_Data_vis/blob/master/images/D3Maps.png)
   
 ================================================================================  
 ##### Bubble Chart showcasing the different types/ formats of events that occur on Eventbrite (using D3.js)
@@ -71,7 +71,7 @@ This is a simple visualization showcasing the weight of the formats of the event
 * References: Bubble Charts D3 [Website](http://bl.ocks.org/mbostock/4063269) - For displaying the bubbles
 
 Following figure shows the screenshot of distributions of events based on their formats
- ![My image](./images/BubbleChart.png)
+ ![My image](https://github.com/vanshady/Eventbrite_Data_vis/blob/master/images/BubbleChart.png)
 
 ================================================================================    
 ##### Calendar Heatmap of Eventbrite events shown according to the dates (using D3.js)
@@ -86,7 +86,7 @@ In this data visualization we construct a calendar, and then map the events to i
 * References: Calendar Heatmap D3 [Website](http://kamisama.github.io/cal-heatmap/) - For displaying the calendar heatmap
 
 Following figure shows the screenshot of distributions of events based on their start date
- ![My image](./images/CalendarJune.png)
+ ![My image](https://github.com/vanshady/Eventbrite_Data_vis/blob/master/images/CalendarJune.png)
   
 #### Possible Enhancements
 We need to figure out how to scrawl data more efficiently because for each venue_id, we have to make a new request, which may trigger the rate limit on our account.
