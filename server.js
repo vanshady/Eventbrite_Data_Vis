@@ -12,7 +12,7 @@ app.use("/public", express.static(path.join(__dirname, 'public')));
 __dirname += '/public/'  
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname+'/GoogleHeatmap.html'));
+    res.sendFile(path.join(__dirname+'/index.html'));
 });
 
 app.get('/googleheatmap', function (req, res) {
