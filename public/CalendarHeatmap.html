@@ -1,59 +1,124 @@
-<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+<!DOCTYPE html>
+<html>
 
-<link rel="stylesheet" href="/public/css/cal-heatmap.css" />
-<script type="text/javascript" src="/public/js/cal-heatmap.min.js"></script>
-	<h3>Calendar Heatmap of Eventbrite events</h3>
-	Hover over the dates to see the date value and the number of events on that day.<br/><br/>
+<head lang="en">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="/public/css/ripples.min.css">
+    <script src="/public/js/jquery-1.11.3.min.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
 
-			<div id="cal-heatmap"></div><br/><br/>
-			<div id="cal-heatmap1"></div>
-			<p></p>
-			<style>
-				#cal-heatmap .graph-label {
-					font-weight: bold;
-					font-size: 18px;
-				}
+    <meta charset="UTF-8">
 
+    <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
 
-				#cal-heatmap .subdomain-text {
-					fill: #fff;
-					opacity: 0;
-				}
+    <link rel="stylesheet" href="/public/css/cal-heatmap.css" />
+    <script type="text/javascript" src="/public/js/cal-heatmap.min.js"></script>
+    <style>
+        #cal-heatmap .graph-label {
+            
+            font-size: 14px;
+        }
+        
+        #cal-heatmap .subdomain-text {
+            fill: #fff;
+            opacity: 0;
+        }
+        
+        #cal-heatmap g:hover .subdomain-text {
+            opacity: 1;
+        }
+        
+        #cal-heatmap1 .graph-label {
+            
+            font-size: 14px;
+        }
+        
+        #cal-heatmap1 .subdomain-text {
+            fill: #fff;
+            opacity: 0;
+        }
+        
+        #cal-heatmap1 g:hover .subdomain-text {
+            opacity: 1;
+        }
+    </style>
 
-				#cal-heatmap g:hover .subdomain-text {
-					opacity: 1;
-				}
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html">Index</a>
+            </div>
 
-			</style>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://eventbrite-data-vis.herokuapp.com/googleheatmap">Google Heatmap</a>
+                    </li>
+                    <li>
+                        <a href="https://eventbrite-data-vis.herokuapp.com/bubble">Bubble Chart</a>
+                    </li>
+                    <li>
+                        <a href="https://eventbrite-data-vis.herokuapp.com/d3heatmap">D3 Heatmap</a>
+                    </li>
+                    <li>
+                        <a href="https://eventbrite-data-vis.herokuapp.com/calendar">Calendar Heatmap</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="col-md-offset-2" style="margin-top:80px">
+        <h3>Calendar Heatmap of Eventbrite events</h3> Hover over the dates to see the date value and the number of events on that day.
+        <br/>
+        <br/>
 
-
-<script type="text/javascript">
-
-var cal = new CalHeatMap();
-cal.init({
-	itemSelector: "#cal-heatmap",
-	domain: "month",
-	subDomain: "x_day",
-	data: "/public/json/dateTimeJSON.json",
-	start: new Date(2015, 0, 6),
-	cellSize: 10,
-	cellPadding: 5,
-	domainGutter: 10,
-	range: 6,
-	legend: [20, 40, 60, 80]
-});
-var calTwo = new CalHeatMap();
-calTwo.init({
-	itemSelector: "#cal-heatmap1",
-	domain: "month",
-	subDomain: "x_day",
-	data: "/public/json/dateTimeJSON.json",
-	start: new Date(2015, 6, 6),
-	cellSize: 10,
-	cellPadding: 5,
-	domainGutter: 10,
-	range: 6,
-	legend: [20, 40, 60, 80]
-});
-
-</script>
+        <div id="cal-heatmap"></div>
+        <br/>
+        <br/>
+        <div id="cal-heatmap1"></div>
+        <p></p>
+    </div>
+    <script type="text/javascript">
+        var cal = new CalHeatMap();
+        cal.init({
+            itemSelector: "#cal-heatmap",
+            domain: "month",
+            subDomain: "x_day",
+            data: "/public/json/dateTimeJSON.json",
+            start: new Date(2015, 0, 6),
+            cellSize: 10,
+            cellPadding: 5,
+            domainGutter: 10,
+            range: 6,
+            legend: [20, 40, 60, 80]
+        });
+        var calTwo = new CalHeatMap();
+        calTwo.init({
+            itemSelector: "#cal-heatmap1",
+            domain: "month",
+            subDomain: "x_day",
+            data: "/public/json/dateTimeJSON.json",
+            start: new Date(2015, 6, 6),
+            cellSize: 10,
+            cellPadding: 5,
+            domainGutter: 10,
+            range: 6,
+            legend: [20, 40, 60, 80]
+        });
+    </script>
+</body>
