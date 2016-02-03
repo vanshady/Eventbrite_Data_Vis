@@ -6,6 +6,9 @@
 # Author: Ashwin Tumma <ashwin.tumma@stonybrook.edu>
 # Date: March 18, 2015
 
+# Modified by: Minwei Xu <faceswilliam@gmail.com>
+# Date: Feb 2, 2016
+
 # Central Idea: 
 # -------------
 # Google Maps API version 3 provides an interface for creation of heatmap by specifying the location 
@@ -29,7 +32,7 @@
 
 # HTML Header information
 template = open('./HeatmapTemplate.html','r')
-heatmapFile = open'/public/GoogleHeatmap.html','wb')
+heatmapFile = open'../../public/GoogleHeatmap.html','wb')
 search = 'var eventsData'
 
 for line in template:

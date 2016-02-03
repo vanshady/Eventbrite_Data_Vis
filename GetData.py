@@ -2,7 +2,7 @@ import requests
 import json
 import time
 
-dataFile = open('/public/csv/data.csv', 'a')
+dataFile = open('./public/csv/data.csv', 'a')
 
 token = "3MRZ7UXGZUXFX7EYSQ5K"
 

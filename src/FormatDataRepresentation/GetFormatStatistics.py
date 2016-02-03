@@ -8,6 +8,9 @@
 # Author: Ashwin Tumma <ashwin.tumma@stonybrook.edu>
 # Date: March 20, 2015
 
+# Modified by: Minwei Xu <faceswilliam@gmail.com>
+# Date: Feb 2, 2016
+
 # Central Idea: 
 # -------------
 # We have already obtained the data for the events' formatID using a separate python file, and 
@@ -58,7 +61,7 @@ for line in pointsFile:
 pointsFile.close()
 
 # Generate a new JSON file to be read by the FormatBubbleChart.html file
-jsonOutputFile = open('/public/json/format.json','wb')
+jsonOutputFile = open('../../public/json/format.json','wb')
 jsonOutputFile.write('{\n "name": "format",\n "children": [\n')
 
 formatDictLen = len(formatDict)

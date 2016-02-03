@@ -1,24 +1,84 @@
-This directory contains all the codes (Python, D3, jQuery) which were used for data visualizations of this project. Refer the README.md files for each of the directory to learn more about the visualizations and details about the source code along with steps for execution.
+# Eventbrite Data Visualizations
+This repository contains data analysis and visualization of data from [Eventbrite](https://www.eventbrite.com/). The data required for these optimizations is obtained from the API provided by [Eventbrite API](http://eventbriteapi.com/). 
+# Demos and Website
+Please have a look at all demos which are running on the Project's [Website](http://ashwintumma23.github.io/EventbriteDataVisualizations). 
 
+#### Development Platforms and Languages
+Python, [D3.js](http://d3js.org/), [Google Maps API v3](https://developers.google.com/maps/), jQuery
 
-#####DIRECTORIES
-* GoogleMapsAPIHeatmap : Heatmap of geographical location of events across the world (with integration to Google Maps)  
-* D3HeatmapUnitedStates :  Heatmap of count of events in the United States (using D3.js)
-* FormatDataRepresentation : Bubble Chart showcasing the different types/ formats of events that occur on Eventbrite (using D3.js).
-* CalendarHeatmap : Calendar Heatmap representing the heatmap of dates for the events on Eventbrite (using D3.js).
+#### Author
+[Minwei Xu](http://mwxu.me)   
+Computer Science Undergraduate Student,  
+UC Davis,  
 
-##### FILES
-* GetEventBriteData.py: Get location, date and formatID data from the APIs that are exposed by Eventbrite API interface.
+This repository is modified from [Ashwin Tumma's](https://sites.google.com/site/ashwintumma23) version
 
+#### Enhancement
+Because of the update of Eventbrite API, venue is no longer accessible. The venue is now accessed by venue_id.
+Refactored some of the files. Changed all txt to csv.
+Changed the order of csv.
+Some minor enhancements.
 
+#### License
+GNU GPL v2
 
-##### Usage
-To update data
-```
-$ python GetEventBriteData.py
-```
-This will create a file named `data.csv` in the current directory, and 
+#### Visualizations
+This section lists the various visualizations that are developed for this project
+* Heatmap of geographical location of events across the world (with integration to Google Maps)
+* Heatmap of count of events in the United States (using D3.js)
+* Bubble Chart showcasing the different types/ formats of events that occur on Eventbrite (using D3.js).
+* Calendar Heatmap showing the heatmap according to the dates of the events (using D3.js)
 
-##### Notes
-The Eventbrite token used for fetching the data is private to me, so I have masked the token using Xs. You can generate your own token using the API provided by EventBrite at [this](http://www.eventbriteapi.com) link.
- 
+Heatmap of Geographical Location of Events across the world (Google Maps API)
+================================================================================
+In this visualization, the geographical location of Eventbrite events is plotted on the global map. Google Maps API is used, so the values for the location are encoded as the `latitude` and `longitude` values of the location. We leverage the power of Google Maps to zoom in and zoom out to have a closer look into any geogprahical location in the world.
+
+###### Code Details: 
+* Source Code Directory: `GoogleHeatmap` (Read the README.md file in the corresponding directory)
+
+* References: Google maps API code samples from Google Developers [website](https://developers.google.com/maps/).
+
+Following figure shows the screenshot of the data visualization looking from the global perspective
+ ![My image](./Images/GMapFull.png)
+  
+While, the next figure shows the screenshot of the event location plots for United States:
+![My image](./Images/UnitedStates.png)
+
+Heatmap of count of events in the United States (using D3.js)
+================================================================================
+In this data visualization, we create a heatmap of the states in the United States of America indicating the number of events which have occured/ will occur in that particular state. The heatmap allows us to have a glance of the event distribution, while on hovering the mouse over the state, the count of the events in that state are displayed.
+
+###### Code Details: 
+* Source Code Directory: `D3HeatmapUnitedStates` (Read the README.md file in the corresponding directory)
+
+* References: DataMaps - Open Source code for creating maps [website](http://datamaps.github.io/).  
+Tipsy [Website](http://bl.ocks.org/ilyabo/1373263) - For displaying tips on mouse hover
+
+Following figure shows the screenshot of distributions of events based on their count in the United States
+ ![My image](./Images/D3Maps.png)
+  
+  
+##### Bubble Chart showcasing the different types/ formats of events that occur on Eventbrite (using D3.js)
+This is a simple visualization showcasing the weight of the formats of the events on Eventbrite globally. On the event of hovering the mouse over the bubble, shows a detailed description of the format, and also its count.
+
+###### Code Details: 
+* Source Code Directory: `FormatDataRepresentation` (Read the README.md file in the corresponding directory)
+
+* References: Bubble Charts D3 [Website](http://bl.ocks.org/mbostock/4063269) - For displaying the bubbles
+
+Following figure shows the screenshot of distributions of events based on their formats
+ ![My image](./Images/BubbleChart.png)
+  
+##### Calendar Heatmap of Eventbrite events shown according to the dates (using D3.js)
+In this data visualization we construct a calendar, and then map the events to its particular date. This heatmap representation shows us at a single glance which date or month has the highest concentration of events.
+
+###### Code Details: 
+* Source Code Directory: `CalendarHeatMap` (Read the README.md file in the corresponding directory)
+
+* References: Calendar Heatmap D3 [Website](http://kamisama.github.io/cal-heatmap/) - For displaying the calendar heatmap
+
+Following figure shows the screenshot of distributions of events based on their start date
+ ![My image](./Images/CalendarJune.png)
+  
+#### Enhancements
+This section lists some of the enhancements that can be done on the visualization charts. 

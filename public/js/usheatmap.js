@@ -73,7 +73,7 @@ function buildMap(data){
       });
 }
  
-$.getJSON("us.json", function(data) {
+$.getJSON("/public/json/us.json", function(data) {
     buildMap(data);
 });
 

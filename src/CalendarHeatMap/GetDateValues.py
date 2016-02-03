@@ -5,6 +5,9 @@
 # Author: Ashwin Tumma <ashwin.tumma@stonybrook.edu>
 # Date: March 20, 2015
 
+# Modified by: Minwei Xu <faceswilliam@gmail.com>
+# Date: Feb 2, 2016
+
 # Central Idea: 
 # -------------
 # We have already obtained the data for the events' start date using a separate python file, and 
@@ -24,7 +27,7 @@ import time
 epochTimeDictionary = {}
 
 pattern = '%Y-%m-%d %H:%M:%S'
-pointsFile = open('/public/csv/data.csv')
+pointsFile = open('../../public/csv/data.csv')
 
 # Extract the values of the start date from the input file
 for line in pointsFile:
@@ -50,7 +53,7 @@ for line in pointsFile:
 pointsFile.close()
 
 # Start writing data to the output JSON file
-jsonOutputFile = open('/public/json/dateTimeJSON.json','wb')
+jsonOutputFile = open('../../public/json/dateTimeJSON.json','wb')
 jsonOutputFile.write("{") 
 
 for epochTime, value in epochTimeDictionary.items():

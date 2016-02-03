@@ -1,0 +1,16 @@
+{
+  "name": "eventbrite",
+  "version": "1.0.0",
+  "description": "Data visualization of Eventbrite data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Eventbrite_Data_Vis.git"
+  },
+  "author": "Minwei Xu",
+  "license": "ISC"
+}

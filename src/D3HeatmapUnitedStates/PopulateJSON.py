@@ -5,6 +5,10 @@
 
 # Author: Ashwin Tumma <ashwin.tumma@stonybrook.edu>
 # Date: March 18, 2015
+
+# Modified by: Minwei Xu <faceswilliam@gmail.com>
+# Date: Feb 2, 2016
+
 #############################################################################################
 import os
 
@@ -13,7 +17,7 @@ os.system('cp us.json.template us.json')
 
 # Open the file containing the US states data
 fp = open('state.csv')
-jsonFile = open('/public/json/us.json','a+')
+jsonFile = open('../../public/json/us.json','a+')
 
 index = 1 
 for line in fp: 
