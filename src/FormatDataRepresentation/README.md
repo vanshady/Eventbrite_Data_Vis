@@ -19,7 +19,7 @@ This section provides a brief description of the all the files and their purpose
 
 ### Screenshots 
 Following figure shows the screenshot of distributions of events based on their format. 
-  ![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/images/BubbleChart.png)
+  ![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/images%2FBubbleChart.png)
  
 
 ### Other Enhancements: 

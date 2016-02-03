@@ -22,4 +22,4 @@ This section provides a brief description of the all the files and their purpose
 
 ### Screenshots: 
 The following screenshot displays a sample value for a day in month of June 2015
- ![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/images/CalendarJune.png)
+ ![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/images%2FCalendarJune.png)

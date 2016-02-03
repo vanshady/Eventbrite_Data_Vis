@@ -25,7 +25,7 @@ This section provides a brief description of the all the files and their purpose
 
 ### Screenshots 
 Following figure shows the screenshot of distributions of events based on their count in the United States. The state being hovered upon in this screenshot is New York. 
- ![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/images/D3Maps.png)
+ ![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/images%2FD3Maps.png)
  
 ### Other Enhancements: 
  This section lists some of the enhancements that are possible for in this data visualization. 

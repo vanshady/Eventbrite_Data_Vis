@@ -20,10 +20,10 @@ This section provides a brief description of the all the files and their purpose
 
 ### Screenshots 
 Following figure shows the screenshot of the data visualization looking from the global perspective
- ![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/Images/GMapFull.png)
+ ![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/images%2FGMapFull.png)
   
 While, the next figure shows the screenshot of the event location plots for United States:
-![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/Images/UnitedStates.png)
+![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/images%2FUnitedStates.png)
  
 ### Other Enhancements: 
  This section lists some of the enhancements that are possible for in this data visualization. 
