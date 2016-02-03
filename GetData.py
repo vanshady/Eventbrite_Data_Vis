@@ -4,7 +4,7 @@ import time
 
 dataFile = open('./public/csv/data.csv', 'a')
 
-token = "3MRZ7UXGZUXFX7EYSQ5K"
+token = ""
 
 s = ""
 for page in range(1, 500):

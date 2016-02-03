@@ -42,11 +42,12 @@ statesDictionary = {
 'AL':0,'AK':0,'AZ':0,'AR':0,'CA':0,'CO':0,'CT':0,'DE':0,'FL':0,'GA':0,'HI':0,'ID':0,'IL':0,'IN':0,'IA':0,'KS':0,'KY':0,'LA':0,'ME':0,'MD':0,'MA':0,'MI':0,'MN':0,'MS':0,'MO':0,'MT':0,'NE':0,'NV':0,'NH':0,'NJ':0,'NM':0,'NY':0,'NC':0,'ND':0,'OH':0,'OK':0,'OR':0,'PA':0,'RI':0,'SC':0,'SD':0,'TN':0,'TX':0,'UT':0,'VT':0,'VA':0,'WA':0,'WV':0,'WI':0,'WY':0
 }
 
+token = ""
 # 500 was the page count (with each page having 50 entries) on the day this script was written
 for page in range(1, 500):
 
 	# The token mentioned in the URL is the token which I got generated from the Eventbrite API User Interface
-	# For security purposes I have masked the token with all Xs in the published version of this Python code, 
+	# For security purposes I hide the token in the published version of this Python code, 
 	# but you can get yours generated similary from Eventbrite's Generate Token Page.
         response = requests.get(
             "https://www.eventbriteapi.com/v3/events/search/?token=" + token + "&page=" + str(page),

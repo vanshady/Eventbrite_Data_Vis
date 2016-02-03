@@ -31,8 +31,9 @@ import json
 # The token mentioned in the URL is the token which I got generated from the Eventbrite API User Interface
 # For security purposes I have masked the token with all Xs in the published version of this Python code, 
 # but you can get yours generated similary from Eventbrite's Generate Token Page.
- 
-response = urllib2.urlopen('https://www.eventbriteapi.com/v3/formats/?token=XXXXXXXXXXXXXXX')
+
+token = ""
+response = urllib2.urlopen('https://www.eventbriteapi.com/v3/formats/?token='+token)
 data = json.load(response)
 
 formats = data['formats']
