@@ -1,0 +1,24 @@
+{
+ "name": "format",
+ "children": [
+{"name": "Party", "longName":"Party or Social Gathering", "size":13184},
+{"name": "Networking", "longName":"Meeting or Networking Event", "size":16123},
+{"name": "Tournament", "longName":"Tournament", "size":1218},
+{"name": "Rally", "longName":"Rally", "size":392},
+{"name": "Race", "longName":"Race or Endurance Event", "size":3715},
+{"name": "Game", "longName":"Game or Competition", "size":3174},
+{"name": "Attraction", "longName":"Attraction", "size":1345},
+{"name": "Tour", "longName":"Tour", "size":3508},
+{"name": "Appearance", "longName":"Appearance or Signing", "size":1278},
+{"name": "Retreat", "longName":"Camp, Trip, or Retreat", "size":3063},
+{"name": "Conference", "longName":"Conference", "size":13543},
+{"name": "Expo", "longName":"Tradeshow, Consumer Show, or Expo", "size":2420},
+{"name": "Seminar", "longName":"Seminar or Talk", "size":15950},
+{"name": "Festival", "longName":"Festival or Fair", "size":5580},
+{"name": "Convention", "longName":"Convention", "size":1103},
+{"name": "Screening", "longName":"Screening", "size":1655},
+{"name": "Performance", "longName":"Concert or Performance", "size":12589},
+{"name": "Class", "longName":"Class, Training, or Workshop", "size":62067},
+{"name": "Gala", "longName":"Dinner or Gala", "size":4751},
+{"name": "Other", "longName":"Other", "size":10394}
+]}
