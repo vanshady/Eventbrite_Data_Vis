@@ -1,7 +1,8 @@
 # Eventbrite Data Visualizations
 This repository contains data analysis and visualization of data from [Eventbrite](https://www.eventbrite.com/). The data required for these optimizations is obtained from the API provided by [Eventbrite API](http://eventbriteapi.com/). 
-# Demos and Website
-Please have a look at all demos which are running on the Project's [Website](http://ashwintumma23.github.io/EventbriteDataVisualizations). 
+
+# Demos
+Please have a look at the [DEMO](https://eventbrite-data-vis.herokuapp.com/index.html). 
 
 #### Development Platforms and Languages
 Python, [D3.js](http://d3js.org/), [Google Maps API v3](https://developers.google.com/maps/), jQuery
@@ -12,12 +13,6 @@ Computer Science Undergraduate Student,
 UC Davis,  
 
 This repository is modified from [Ashwin Tumma's](https://sites.google.com/site/ashwintumma23) version
-
-#### Enhancement
-Because of the update of Eventbrite API, venue is no longer accessible. The venue is now accessed by venue_id.
-Refactored some of the files. Changed all txt to csv.
-Changed the order of csv.
-Some minor enhancements.
 
 #### License
 GNU GPL v2
@@ -32,6 +27,9 @@ This section lists the various visualizations that are developed for this projec
 Heatmap of Geographical Location of Events across the world (Google Maps API)
 ================================================================================
 In this visualization, the geographical location of Eventbrite events is plotted on the global map. Google Maps API is used, so the values for the location are encoded as the `latitude` and `longitude` values of the location. We leverage the power of Google Maps to zoom in and zoom out to have a closer look into any geogprahical location in the world.
+
+###### DEMO
+[Google Heatmap](https://eventbrite-data-vis.herokuapp.com/googleheatmap)
 
 ###### Code Details: 
 * Source Code Directory: `GoogleHeatmap` (Read the README.md file in the corresponding directory)
@@ -48,6 +46,9 @@ Heatmap of count of events in the United States (using D3.js)
 ================================================================================
 In this data visualization, we create a heatmap of the states in the United States of America indicating the number of events which have occured/ will occur in that particular state. The heatmap allows us to have a glance of the event distribution, while on hovering the mouse over the state, the count of the events in that state are displayed.
 
+###### DEMO
+[D3 Heatmap](https://eventbrite-data-vis.herokuapp.com/d3heatmap)
+
 ###### Code Details: 
 * Source Code Directory: `D3HeatmapUnitedStates` (Read the README.md file in the corresponding directory)
 
@@ -57,9 +58,12 @@ Tipsy [Website](http://bl.ocks.org/ilyabo/1373263) - For displaying tips on mous
 Following figure shows the screenshot of distributions of events based on their count in the United States
  ![My image](./Images/D3Maps.png)
   
-  
+================================================================================  
 ##### Bubble Chart showcasing the different types/ formats of events that occur on Eventbrite (using D3.js)
 This is a simple visualization showcasing the weight of the formats of the events on Eventbrite globally. On the event of hovering the mouse over the bubble, shows a detailed description of the format, and also its count.
+
+###### DEMO
+[Bubble Chart](https://eventbrite-data-vis.herokuapp.com/bubble)
 
 ###### Code Details: 
 * Source Code Directory: `FormatDataRepresentation` (Read the README.md file in the corresponding directory)
@@ -68,9 +72,13 @@ This is a simple visualization showcasing the weight of the formats of the event
 
 Following figure shows the screenshot of distributions of events based on their formats
  ![My image](./Images/BubbleChart.png)
-  
+
+================================================================================    
 ##### Calendar Heatmap of Eventbrite events shown according to the dates (using D3.js)
 In this data visualization we construct a calendar, and then map the events to its particular date. This heatmap representation shows us at a single glance which date or month has the highest concentration of events.
+
+###### DEMO
+[Calendar Heatmap](https://eventbrite-data-vis.herokuapp.com/calendar)
 
 ###### Code Details: 
 * Source Code Directory: `CalendarHeatMap` (Read the README.md file in the corresponding directory)
@@ -80,5 +88,5 @@ In this data visualization we construct a calendar, and then map the events to i
 Following figure shows the screenshot of distributions of events based on their start date
  ![My image](./Images/CalendarJune.png)
   
-#### Enhancements
-This section lists some of the enhancements that can be done on the visualization charts. 
+#### Possible Enhancements
+We need to figure out how to scrawl data more efficiently because for each venue_id, we have to make a new request, which may trigger the rate limit on our account.
