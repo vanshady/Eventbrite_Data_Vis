@@ -61,7 +61,7 @@ for line in pointsFile:
 
 pointsFile.close()
 
-# Generate a new JSON file to be read by the FormatBubbleChart.html file
+# Generate a new JSON file to be read by the BubbleChart.html file
 jsonOutputFile = open('../../public/json/format.json','wb')
 jsonOutputFile.write('{\n "name": "format",\n "children": [\n')
 

@@ -15,7 +15,7 @@
 # encoded in its latitude and longtitude format. 
 
 # We have already obtained the data for the events' location using a separate python file, and 
-# have the data available in LocationDateFormatData.txt file. We will be using the location values 
+# have the data available in data.csv file. We will be using the location values 
 # from this file. 
 
 # We use two pre-requisite files for this program: file1.html and file2.html which simply contain 
@@ -23,7 +23,7 @@
 
 # Usage: 
 # ----------
-# $ python CreateGoogleAPIHeatMapFile.py 
+# $ python CreateHeatmap.py 
 # The output of this program will be a file named - GoogleMapsHeatMapFile.html which will contain 
 # all the data points encoded in the latitude and longitude format along with all the data required 
 # for rendering the map.

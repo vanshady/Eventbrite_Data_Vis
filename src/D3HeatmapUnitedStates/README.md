@@ -8,7 +8,7 @@ This section enlists the features of the D3 heatmap data visualization.
 
 ### Files
 This section provides a brief description of the all the files and their purpose in this directory. 
-* `DataPoints.txt`: File containing the count of the number of events that have occured/ will occur in each state.
+* `state.csv`: File containing the count of the number of events that have occured/ will occur in each state.
 * `GetStatesCounters.py`: Python script for fetching the "region" data from the Eventbrite JSON API and counting the number of occurences for events in each state of the United States. (See file header comments for detailed description and elaborate comments).
 * `PopulateJSON.py`: Python script for reading the data from the data points text file and populating the JSON file with the required data and its required format.
 * `README.md`: This file
@@ -25,7 +25,7 @@ This section provides a brief description of the all the files and their purpose
 
 ### Screenshots 
 Following figure shows the screenshot of distributions of events based on their count in the United States. The state being hovered upon in this screenshot is New York. 
- ![My image](https://github.com/ashwintumma23/EventbriteDataVisualizations/blob/master/Images/D3Maps.png)
+ ![My image](https://github.com/vanshady/Eventbrite_Data_Vis/blob/master/images/D3Maps.png)
  
 ### Other Enhancements: 
  This section lists some of the enhancements that are possible for in this data visualization. 

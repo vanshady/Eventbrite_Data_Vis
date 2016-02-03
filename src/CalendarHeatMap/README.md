@@ -11,7 +11,7 @@ This section enlists the features of the Calendar heatmap data visualization.
 This section provides a brief description of the all the files and their purpose in this directory. 
 * `CalendarHeatmap.html`: HTML5 code for rendering the Javascript heatmap in the browser
 * `GetDateValues.py`: Python script for extracting the values of the start date of the events of Eventbrite (See file header  comments for detailed description and elaborate comments)
-* `data.csv`: Text information that is obtained from the `src/GetEventBriteData.py` python script. When I engineered this project, I ran the `src/GetEventBriteData.py` script only once to fetch all the data that I wanted to analyze and present visually. 
+* `data.csv`: Text information that is obtained from the `GetData.py` python script. When I engineered this project, I ran the `GetData.py` script only once to fetch all the data that I wanted to analyze and present visually. 
 * `README.md`: This file
 * `cal-heatmap.css`: CSS for displaying the Calendar Heatmap, obtained from [cal-heatmap](http://kamisama.github.io/cal-heatmap/)
 * `cal-heatmap.min.js`: Javascript and Jquery file for displaying the Calendar Heatmap, obtained from [cal-heatmap](http://kamisama.github.io/cal-heatmap/)
@@ -22,4 +22,4 @@ This section provides a brief description of the all the files and their purpose
 
 ### Screenshots: 
 The following screenshot displays a sample value for a day in month of June 2015
- ![My image](https://github.com/ashwintumma23/EventbriteDataVisualizations/blob/master/Images/CalendarJune.png)
+ ![My image](https://github.com/vanshady/Eventbrite_Data_vis/blob/master/images/CalendarJune.png)

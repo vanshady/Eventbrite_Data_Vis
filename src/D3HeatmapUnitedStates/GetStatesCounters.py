@@ -21,8 +21,8 @@
 
 # Usage: 
 # ----------
-# $ python GetStatesCounters.py > DataPoints.txt
-# The output of this program is redirected to the DataPoints.txt file
+# $ python GetStatesCounters.py > state.csv
+# The output of this program is redirected to the state.csv file
 
 # Alternatives for usage: 
 # ------------------

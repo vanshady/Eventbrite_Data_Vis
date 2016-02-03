@@ -24,7 +24,7 @@ app.get('/d3heatmap', function (req, res) {
 });
 
 app.get('/bubble', function (req, res) {
-    res.sendFile(path.join(__dirname+'/FormatBubbleChart.html'));
+    res.sendFile(path.join(__dirname+'/BubbleChart.html'));
 });
 
 app.get('/calendar', function (req, res) {
